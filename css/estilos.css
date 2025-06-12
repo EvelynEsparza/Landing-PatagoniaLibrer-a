@@ -1,8 +1,10 @@
+
 body {
   background-image: url('/image/fondo.jpeg'); /* Asegurate que la ruta sea correcta */
   background-size: cover;        /* Ajusta la imagen al tamaño de la pantalla */
   background-repeat: no-repeat;  /* Evita que se repita */
   background-position: center;   /* Centra la imagen */
+  font-family: 'Montserrat', sans-serif;
   
 }
 /*NavBar*/
@@ -13,6 +15,9 @@ body {
   padding-bottom: 0 !important;
   height: 80px;
   min-height: 60px;
+}
+section {
+  scroll-margin-top: 100px; /* espacio igual o mayor a la altura del navbar */
 }
 
 .container-fluid {
@@ -162,7 +167,13 @@ body {
   transform: scale(4.0); /* Escalar la imagen sin afectar el layout */
   margin-left: -450px; /* Aumentar este valor para moverla más a la izquierda */
   transition: transform 0.3s ease;
+  position: relative; 
+  z-index: 1;
+  pointer-events: none;
+
   }
+  
+  
 /* Imagen personalizada para el tercer slide */
 .img-slide-3 {
   max-height: 100%;
@@ -360,7 +371,10 @@ body {
   object-fit: contain;
   transition: transform 0.2s ease-in-out;
    margin-top: -12px;
-   
+
+}
+.icon-instagram:hover {
+  transform: scale(1.2);
 }
 
 .contacto-iconos {
@@ -419,3 +433,9 @@ body {
   margin: 1.5rem auto;
   opacity: 1;
 }
+/* footer */
+.footer-personalizado {
+  background-color: #181a1c !important;
+  color: #ffffff !important;
+}
+
