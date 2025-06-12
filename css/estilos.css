@@ -289,3 +289,81 @@ body {
   border: none !important;
   padding: 0 !important;
 }
+
+/*Sobre nosotros */
+.sobre-nosotros-section {
+  background-color: #181a1c; 
+}
+.sobre-nosotros-section h2 {
+  font-weight: 700;
+  color: #ffffff;
+}
+.sobre-nosotros-section p {
+  color: #ffffff;
+}
+.sobre-nosotros-section img {
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+/* SOBRE NOSOTROS */
+.contacto-section {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.contacto-section h2 {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.contacto-section a:hover {
+  text-decoration: underline;
+}
+
+/* contacto */
+.correo-icon {
+  width: 50px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+   margin-top: -12px;
+}
+
+.correo-icon:hover {
+  transform: scale(1.2);
+}
+.icono-contacto {
+  width: 45px;
+  height: 40px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+   margin-top: -12px;
+}
+
+.icono-contacto:hover {
+  transform: scale(1.2);
+}
+.icon-facebook {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+   margin-top: -12px;
+}
+
+.icon-facebook:hover {
+  transform: scale(1.2);
+  }
+  .icon-instagram {
+  width: 60px;
+  height: 55px;
+  object-fit: contain;
+  transition: transform 0.2s ease-in-out;
+   margin-top: -12px;
+   
+}
+
+.icon-instagram:hover {
+  transform: scale(1.2);
+  }
+  
