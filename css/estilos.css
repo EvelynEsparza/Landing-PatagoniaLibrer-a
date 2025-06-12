@@ -1,3 +1,4 @@
+/*NavBar*/
 .navbar {
   background-color: #1f3b66 !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -21,7 +22,7 @@
 .navbar-collapse {
   display: flex !important;
   justify-content: center; /* Centrado horizontal */
-  padding-right: 10%; /* Empuja a la derecha */
+  padding-right: 10%; /* Empujar a la derecha */
 }
 
 .navbar-nav {
@@ -43,4 +44,162 @@
 
 .navbar-nav .nav-link:hover {
   color: #9dafc2 !important;
+}
+
+/* Carousel */
+
+/* Estilo para cada slide */
+.carousel-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6fdc6f; /* Fondo verde */
+  min-height: 400px;
+  transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
+  opacity: 0;
+}
+
+.carousel-item.active {
+  opacity: 1;
+}
+
+/* Contenedor general del contenido dentro del slide */
+.carousel-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /* Centra todo horizontalmente */
+  width: 100%;
+  max-width: 1000px;
+  padding: 2rem;
+  margin: 0 auto;
+  gap: 3rem; /* Espacio entre imagen y texto */
+}
+
+/* Texto del carrusel */
+.carousel-text {
+  flex: 1;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Centrar verticalmente */
+  align-items: center;       /* Centrar horizontalmente */
+  text-align: center;
+}
+
+.carousel-text h2 {
+  font-weight: bold;
+}
+
+.carousel-text p {
+  font-weight: 500;
+  color: white;
+}
+
+/* Imagen del carrusel */
+.carousel-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;  /* Centrar horizontalmente */
+  align-items: center;      /* Centrar verticalmente */
+}
+
+.carousel-image img {
+  max-height: 300px;
+  width: auto;
+}
+
+/* Flechas de navegación del carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  padding: 0;
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  left: 15%;  /* Ajustar este valor para acercar o alejar la flecha izquierda */
+}
+
+.carousel-control-next {
+  right: 20%; /* Ajustar este valor para acercar o alejar la flecha derecha */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+/* Imagen personalizada para el primer slide */
+.img-slide-1 {
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%; /* Usá todo el alto disponible del contenedor */
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.2) translateY(20px); /* Escala la imagen sin afectar el layout */
+  transition: transform 0.3s ease;
+
+  }
+/* Imagen personalizada para el segundo slide */
+.img-slide-2 {
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%; /* Usá todo el alto disponible del contenedor */
+  width: auto;
+  object-fit: contain;
+  transform: scale(4.0); /* Escala la imagen sin afectar el layout */
+  margin-left: -450px; /* Aumentar este valor para moverla más a la izquierda */
+  transition: transform 0.3s ease;
+  }
+/* Imagen personalizada para el tercer slide */
+.img-slide-3 {
+  max-height: 100%;
+  max-width: 100%;
+  height: 100%; /* Usá todo el alto disponible del contenedor */
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.9); /* Escala la imagen sin afectar el layout */
+  transition: transform 0.3s ease;
+  }
+
+/* Sección ¿Qué tenemos? con fondo negro */
+#que-tenemos {
+  background-color: #000; /* Fondo negro */
+  padding: 4rem 0;
+}
+
+/* Títulos */
+#que-tenemos h2 {
+  font-weight: bold;
+  color: #ffffff; /* Texto blanco */
+}
+
+/* Párrafos */
+#que-tenemos p {
+  color: #cccccc; /* Gris claro para contraste */
+}
+
+/* Tarjetas */
+#que-tenemos .card {
+  background-color: #1a1a1a; /* Fondo oscuro para tarjetas */
+  color: #ffffff;
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+#que-tenemos .card:hover {
+  transform: scale(1.03);
+}
+
+/* Imágenes dentro de tarjetas */
+#que-tenemos .card-img-top {
+  max-height: 180px;
+  object-fit: contain;
+  padding: 1rem;
+  background-color: transparent;
 }
