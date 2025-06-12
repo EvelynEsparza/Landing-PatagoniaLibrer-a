@@ -1,6 +1,13 @@
+body {
+  background-image: url('/image/fondo.jpeg'); /* Asegurate que la ruta sea correcta */
+  background-size: cover;        /* Ajusta la imagen al tamaño de la pantalla */
+  background-repeat: no-repeat;  /* Evita que se repita */
+  background-position: center;   /* Centra la imagen */
+  
+}
 /*NavBar*/
 .navbar {
-  background-color: #1f3b66 !important;
+  background-color: #181a1c !important;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding-top: 0 !important;
   padding-bottom: 0 !important;
@@ -43,7 +50,7 @@
 }
 
 .navbar-nav .nav-link:hover {
-  color: #9dafc2 !important;
+  color: #f4c542 !important;
 }
 
 /* Carousel */
@@ -53,7 +60,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #6fdc6f; /* Fondo verde */
+  background-color: transparent; /* Fondo verde */
   min-height: 400px;
   transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
   opacity: 0;
@@ -79,7 +86,7 @@
 /* Texto del carrusel */
 .carousel-text {
   flex: 1;
-  color: #000;
+  color: #181a1c;
   display: flex;
   flex-direction: column;
   justify-content: center;   /* Centrar verticalmente */
@@ -138,10 +145,10 @@
 .img-slide-1 {
   max-height: 100%;
   max-width: 100%;
-  height: 100%; /* Usá todo el alto disponible del contenedor */
+  height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(1.2) translateY(20px); /* Escala la imagen sin afectar el layout */
+  transform: scale(1.2) translateY(20px); /* Escalar la imagen sin afectar el layout */
   transition: transform 0.3s ease;
 
   }
@@ -149,10 +156,10 @@
 .img-slide-2 {
   max-height: 100%;
   max-width: 100%;
-  height: 100%; /* Usá todo el alto disponible del contenedor */
+  height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(4.0); /* Escala la imagen sin afectar el layout */
+  transform: scale(4.0); /* Escalar la imagen sin afectar el layout */
   margin-left: -450px; /* Aumentar este valor para moverla más a la izquierda */
   transition: transform 0.3s ease;
   }
@@ -160,34 +167,35 @@
 .img-slide-3 {
   max-height: 100%;
   max-width: 100%;
-  height: 100%; /* Usá todo el alto disponible del contenedor */
+  height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(1.9); /* Escala la imagen sin afectar el layout */
+  transform: scale(1.9); /* Escalar la imagen sin afectar el layout */
   transition: transform 0.3s ease;
   }
 
-/* Sección ¿Qué tenemos? con fondo negro */
+/* Sección ¿Qué tenemos? */
 #que-tenemos {
-  background-color: #000; /* Fondo negro */
+  background-color: #181a1c; /* Fondo negro */
   padding: 4rem 0;
 }
 
 /* Títulos */
 #que-tenemos h2 {
   font-weight: bold;
-  color: #ffffff; /* Texto blanco */
+  color: #ffffff; /* Texto */
 }
 
 /* Párrafos */
 #que-tenemos p {
-  color: #cccccc; /* Gris claro para contraste */
+  color: #181a1c; 
 }
+
 
 /* Tarjetas */
 #que-tenemos .card {
-  background-color: #1a1a1a; /* Fondo oscuro para tarjetas */
-  color: #ffffff;
+  background-color: #ffffff; /* Fondo oscuro para tarjetas */
+  color: #181a1c;
   border: none;
   transition: transform 0.3s ease;
 }
@@ -202,4 +210,82 @@
   object-fit: contain;
   padding: 1rem;
   background-color: transparent;
+}
+.separador {
+  border: none;
+  border-top: 2px solid #ffffff; /* Línea blanca */
+  width: 100%;                    /* Ancho ajustable */
+  margin: 2rem auto;             /* Centrado y con margen */
+  opacity: 1;                  /* Suavizar un poco */
+}
+
+/* Productos */
+#ver-productos {
+  background-color: rgba(0, 0, 0, 0.5); /* Blanco con 70% de opacidad */
+  color: #ffffff;
+}
+
+#ver-productos h2 {
+  font-weight: bold;
+}
+
+.nav-tabs .nav-link {
+  color: #ffffff;
+  font-weight: 500;
+  border: none;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: #f4c542;
+  color: #181a1c;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Placeholders */
+.card-placeholder {
+  background-color: transparent; /* Color de fondo claro */
+  color: #f4c542;              /* Color del texto */
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+
+.card-placeholder:hover {
+  background-color: transparent; /* Fondo al pasar el mouse */
+  color: #181a1c;
+}
+.card-placeholder h5,
+.card-placeholder p {
+  color: #ffffff; /* o el color que desees */
+}
+
+.card-placeholder:hover h5,
+.card-placeholder:hover p {
+  color: #f4c542;
+}
+.card.card-placeholder {
+  background-color: #181a1c !important; /* Fondo translúcido o el que quieras */
+  color: #181a1c !important;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  padding: 15px;
+  transition: all 0.3s ease;
+}
+.img-placeholder {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: block;
+  width: 100%;
+  height: auto;
+  background: transparent !important;
+}
+.card-placeholder {
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
 }
