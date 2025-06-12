@@ -1,6 +1,6 @@
 
 body {
-   background-image: url('../image/fondo.png');
+  background-image: url('/Landing-PatagoniaLibrer-a/image/fondo.png');
   background-size: cover;        /* Ajustar la imagen al tamaño de la pantalla */
   background-repeat: no-repeat;  /* Evitar que se repita */
   background-position: center;   /* Centrar la imagen */
