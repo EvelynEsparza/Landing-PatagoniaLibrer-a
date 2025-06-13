@@ -487,4 +487,20 @@ section {
     width: 100% !important;
     height: auto !important;
   }
+}¨
+@media (max-width: 768px) {
+  .navbar-brand img {
+    height: 40px !important;
+    width: auto;
+  }
+
+  .navbar-collapse {
+    background-color: #181a1c;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0;
+  }
 }
