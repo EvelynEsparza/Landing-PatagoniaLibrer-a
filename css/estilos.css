@@ -450,4 +450,29 @@ section {
     text-align: center;
     padding: 1rem;
   }
+
+  .carousel-image img {
+    width: 80%;
+    height: auto;
+  }
+
+  .carousel-text {
+    padding: 1rem;
+  }
+
+  .navbar-brand img {
+    height: 50px !important;
+    width: auto;
+  }
+
+  .navbar-collapse {
+    background-color: #181a1c;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .card .card-img-top {
+    width: 100%;
+    height: auto;
+  }
 }
