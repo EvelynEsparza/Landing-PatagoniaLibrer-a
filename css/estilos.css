@@ -451,9 +451,12 @@ section {
     padding: 1rem;
   }
 
-  .carousel-image img {
-    width: 80%;
-    height: auto;
+  .carousel-image img,
+  .img-slide-1,
+  .img-slide-2,
+  .img-slide-3 {
+    width: 80% !important;
+    height: auto !important;
   }
 
   .carousel-text {
@@ -474,5 +477,14 @@ section {
   .card .card-img-top {
     width: 100%;
     height: auto;
+  }
+
+  .card .card-body {
+    text-align: center;
+  }
+
+  .img-placeholder {
+    width: 100% !important;
+    height: auto !important;
   }
 }
