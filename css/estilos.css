@@ -1,12 +1,12 @@
 
 body {
   background-image: url('/Landing-PatagoniaLibrer-a/image/fondo.png');
-  background-size: cover;        /* Ajustar la imagen al tamaño de la pantalla */
-  background-repeat: no-repeat;  /* Evitar que se repita */
-  background-position: center;   /* Centrar la imagen */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   font-family: 'Montserrat', sans-serif;
-  
 }
+
 /*NavBar*/
 .navbar {
   background-color: #181a1c !important;
@@ -16,6 +16,7 @@ body {
   height: 80px;
   min-height: 60px;
 }
+
 section {
   scroll-margin-top: 100px; 
 }
@@ -32,14 +33,14 @@ section {
 }
 
 .navbar-collapse {
-  display: flex !important;
-  justify-content: center; /* Centrado horizontal */
-  padding-right: 10%; /* Empujar a la derecha */
+  
+  justify-content: center;
+  padding-right: 10%;
 }
 
 .navbar-nav {
   display: flex;
-  gap: 1.5rem; /* Espacio entre enlaces */
+  gap: 1.5rem;
 }
 
 .navbar-nav .nav-link {
@@ -59,44 +60,40 @@ section {
 }
 
 /* Carousel */
-
-/* Estilo para cada slide */
 .carousel-item {
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: transparent; 
   min-height: 400px;
-  transition: opacity 1s ease-in-out; /* Efecto de desvanecimiento */
+  transition: opacity 1s ease-in-out;
   opacity: 0;
-  margin-top: 120px
+  margin-top: 120px;
 }
 
 .carousel-item.active {
   opacity: 1;
 }
 
-/* Contenedor general del contenido dentro del slide */
 .carousel-content {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center; /* Centrar todo horizontalmente */
+  justify-content: center;
   width: 100%;
   max-width: 1000px;
   padding: 2rem;
   margin: 0 auto;
-  gap: 3rem; /* Espacio entre imagen y texto */
+  gap: 3rem;
 }
 
-/* Texto del carrusel */
 .carousel-text {
   flex: 1;
   color: #181a1c;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* Centrar verticalmente */
-  align-items: center;       /* Centrar horizontalmente */
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -109,12 +106,11 @@ section {
   color: white;
 }
 
-/* Imagen del carrusel */
 .carousel-image {
   flex: 1;
   display: flex;
-  justify-content: center;  /* Centrar horizontalmente */
-  align-items: center;      /* Centrar verticalmente */
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-image img {
@@ -122,7 +118,6 @@ section {
   width: auto;
 }
 
-/* Flechas de navegación del carrusel */
 .carousel-control-prev,
 .carousel-control-next {
   position: absolute;
@@ -134,11 +129,11 @@ section {
 }
 
 .carousel-control-prev {
-  left: 15%;  /* Ajustar este valor para acercar o alejar la flecha izquierda */
+  left: 15%;
 }
 
 .carousel-control-next {
-  right: 20%; /* Ajustar este valor para acercar o alejar la flecha derecha */
+  right: 20%;
 }
 
 .carousel-control-prev-icon,
@@ -147,46 +142,40 @@ section {
   width: 40px;
   height: 40px;
 }
-/* Imagen personalizada para el primer slide */
+
 .img-slide-1 {
   max-height: 100%;
   max-width: 100%;
   height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(1.2) translateY(20px) translateX(-16px); /* Escalar la imagen sin afectar el layout */
+  transform: scale(1.2) translateY(20px) translateX(-16px);
   transition: transform 0.3s ease;
-  
+}
 
-  }
-/* Imagen personalizada para el segundo slide */
 .img-slide-2 {
   max-height: 100%;
   max-width: 100%;
   height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(4.0); /* Escalar la imagen sin afectar el layout */
-  margin-left: -450px; /* Aumentar este valor para moverla más a la izquierda */
+  transform: scale(4.0);
+  margin-left: -450px;
   transition: transform 0.3s ease;
   position: relative; 
   z-index: 1;
   pointer-events: none;
+}
 
-  }
-  
-  
-/* Imagen personalizada para el tercer slide */
 .img-slide-3 {
   max-height: 100%;
   max-width: 100%;
   height: 100%; 
   width: auto;
   object-fit: contain;
-  transform: scale(1.9); /* Escalar la imagen sin afectar el layout */
+  transform: scale(1.9);
   transition: transform 0.3s ease;
-  }
-  
+}
 
 /* Sección ¿Qué tenemos? */
 #que-tenemos {
@@ -194,21 +183,17 @@ section {
   padding: 4rem 0;
 }
 
-/* Títulos */
 #que-tenemos h2 {
   font-weight: bold;
-  color: #ffffff; /* Texto */
+  color: #ffffff;
 }
 
-/* Párrafos */
 #que-tenemos p {
   color: #181a1c; 
 }
 
-
-/* Tarjetas */
 #que-tenemos .card {
-  background-color: #ffffff; /* Fondo para tarjetas */
+  background-color: #ffffff;
   color: #181a1c;
   border: none;
   transition: transform 0.3s ease;
@@ -218,18 +203,18 @@ section {
   transform: scale(1.03);
 }
 
-/* Imágenes dentro de tarjetas */
 #que-tenemos .card-img-top {
   max-height: 180px;
   object-fit: contain;
   padding: 1rem;
   background-color: transparent;
 }
+
 .separador {
   border: none;
-  border-top: 2px solid #ffffff; /* Línea blanca */
-  width: 100%;                    /* Ancho ajustable */
-  margin: 2rem auto;             /* Centrado y con margen */
+  border-top: 2px solid #ffffff;
+  width: 100%;
+  margin: 2rem auto;
   opacity: 1;                  
 }
 
@@ -256,10 +241,9 @@ section {
   border-radius: 5px;
 }
 
-/* Placeholders */
 .card-placeholder {
   background-color: transparent; 
-  color: #f4c542;              /* Color del texto */
+  color: #f4c542;
   border: 1px solid #ffffff;
   border-radius: 10px;
   padding: 15px;
@@ -267,9 +251,10 @@ section {
 }
 
 .card-placeholder:hover {
-  background-color: transparent; /* Fondo al pasar el mouse */
+  background-color: transparent;
   color: #181a1c;
 }
+
 .card-placeholder h5,
 .card-placeholder p {
   color: #ffffff; 
@@ -279,6 +264,7 @@ section {
 .card-placeholder:hover p {
   color: #f4c542;
 }
+
 .card.card-placeholder {
   background-color: #181a1c !important; 
   color: #181a1c !important;
@@ -287,6 +273,7 @@ section {
   padding: 15px;
   transition: all 0.3s ease;
 }
+
 .img-placeholder {
   border: none !important;
   border-radius: 0 !important;
@@ -298,6 +285,7 @@ section {
   height: auto;
   background: transparent !important;
 }
+
 .card-placeholder {
   background: transparent !important;
   border: none !important;
@@ -308,19 +296,22 @@ section {
 .sobre-nosotros-section {
   background-color: #181a1c; 
 }
+
 .sobre-nosotros-section h2 {
   font-weight: 700;
   color: #ffffff;
 }
+
 .sobre-nosotros-section p {
   color: #ffffff;
 }
+
 .sobre-nosotros-section img {
   max-height: 400px;
   object-fit: cover;
   width: 100%;
 }
-/* SOBRE NOSOTROS */
+
 .contacto-section {
   background-color: rgba(0, 0, 0, 0.5);
 }
@@ -346,6 +337,7 @@ section {
 .correo-icon:hover {
   transform: scale(1.2);
 }
+
 .icono-contacto {
   width: 45px;
   height: 40px;
@@ -357,6 +349,7 @@ section {
 .icono-contacto:hover {
   transform: scale(1.2);
 }
+
 .icon-facebook {
   width: 45px;
   height: 45px;
@@ -367,39 +360,43 @@ section {
 
 .icon-facebook:hover {
   transform: scale(1.2);
-  }
-  .icon-instagram {
+}
+
+.icon-instagram {
   width: 60px;
   height: 55px;
   object-fit: contain;
   transition: transform 0.2s ease-in-out;
    margin-top: -12px;
-
 }
+
 .icon-instagram:hover {
   transform: scale(1.2);
 }
 
 .contacto-iconos {
  background-color: rgba(0, 0, 0, 0.5);
-  }
-  .contacto-iconos h2 {
-  color: #ffffff; /* color para el título */
+}
+
+.contacto-iconos h2 {
+  color: #ffffff;
 }
 
 .contacto-iconos p {
-  color: #ffffff; /* color del texto */
+  color: #ffffff;
 }
 
 /* formulario */
 #formulario-contacto {
-  background-color: #f8f9fa;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 12px;
 }
 
 #formulario-contacto h2 {
   font-weight: bold;
+  color: #ffffff; 
 }
+
 .formulario-box {
   background-color: #ffffff;
   border: 1px solid #ccc;
@@ -409,12 +406,7 @@ section {
   margin: auto;
   padding: 40px;
 }
-#formulario-contacto {
- background-color: rgba(0, 0, 0, 0.5);
-}
-#formulario-contacto h2 {
-  color: #ffffff; 
-}
+
 .btn-primary {
   background-color: #f4c542; 
   border-color: #000000;
@@ -422,13 +414,15 @@ section {
 }
 
 .btn-primary:hover {
-  background-color: #c59837; /* color al pasar el mouse */
+  background-color: #c59837;
   border-color: #000000;
 }
+
 .btn-primary:active {
-  background-color: #000000 !important;  /* Al hacer clic */
+  background-color: #000000 !important;
   border-color: #000000 !important;
 }
+
 .separador2 {
   border: none;
   border-top: 1px solid #000000; 
@@ -436,71 +430,170 @@ section {
   margin: 1.5rem auto;
   opacity: 1;
 }
+
 /* footer */
 .footer-personalizado {
   background-color: #181a1c !important;
   color: #ffffff !important;
 }
 
+/* MEDIA QUERIES CORREGIDAS */
 @media (max-width: 768px) {
-  .carousel-content {
-    display: flex;
+  /* Navbar móvil */
+  .navbar {
+    height: auto;
+    min-height: 60px;
+    padding: 0.5rem 0;
+  }
+  
+  .navbar-brand img {
+    height: 40px !important;
+    margin-right: 0 !important;
+    margin-left: 10px !important;
+  }
+
+  .navbar-collapse {
+    background-color: #181a1c;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 8px;
+    justify-content: flex-start !important;
+    padding-right: 1rem !important;
+  }
+
+  .navbar-nav {
     flex-direction: column;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+  }
+  
+  .navbar-nav .nav-link {
+    padding: 0.5rem 0 !important;
+    line-height: normal !important;
+    font-size: 1rem !important;
+  }
+
+  /* Carousel móvil */
+  .carousel-item {
+    margin-top: 80px;
+    min-height: 300px;
     padding: 1rem;
   }
 
-  .carousel-image img,
-  .img-slide-1,
-  .img-slide-2,
-  .img-slide-3 {
-    width: 80% !important;
-    height: auto !important;
+  .carousel-content {
+    
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 100%;
   }
 
   .carousel-text {
-    padding: 1rem;
+    
+    padding: 0;
+  }
+  
+  .carousel-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-text h5 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .carousel-text p {
+    font-size: 0.9rem;
   }
 
-  .navbar-brand img {
-    height: 50px !important;
-    width: auto;
+  .carousel-image {
+   max-height: 350px;
+  width: auto;
+  object-fit: contain;
+  transform: scale(1.5);
+  height: auto !important;
+    position: static !important;         
+    z-index: auto !important;            /* ← Evita que flote sobre el texto */
+    pointer-events: auto !important;
+  }
+  
+
+
+  /* Resetear transformaciones de imágenes en móvil */
+  .img-slide-1,
+  .img-slide-2,
+  .img-slide-3 {
+    transform: none !important;
+    margin-left: 0 !important;
+    max-height: 180px !important;
+    width: auto !important;
+    object-fit: contain !important;
   }
 
-  .navbar-collapse {
-    background-color: #181a1c;
-    text-align: center;
-    padding-bottom: 1rem;
+  /* Controles del carousel */
+  .carousel-control-prev {
+    left: 5% !important;
+  }
+
+  .carousel-control-next {
+    right: 5% !important;
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  /* Secciones */
+  section {
+    scroll-margin-top: 70px;
+  }
+
+  #que-tenemos {
+    padding: 2rem 0;
   }
 
   .card .card-img-top {
-    width: 100%;
-    height: auto;
+    max-height: 150px;
   }
 
-  .card .card-body {
-    text-align: center;
+  /* Tabs responsive */
+  .nav-tabs {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-tabs .nav-link {
+    font-size: 0.85rem;
+    padding: 0.5rem 0.75rem;
+    margin: 0.25rem;
   }
 
-  .img-placeholder {
-    width: 100% !important;
-    height: auto !important;
-  }
-}¨
-@media (max-width: 768px) {
-  .navbar-brand img {
-    height: 40px !important;
-    width: auto;
+  /* Formulario */
+  .formulario-box {
+    padding: 20px;
+    margin: 1rem;
   }
 
-  .navbar-collapse {
-    background-color: #181a1c;
-    text-align: center;
-    padding-bottom: 1rem;
+  /* Contacto */
+  .contacto-iconos .d-flex {
+    gap: 2rem !important;
   }
+}
 
-  .navbar-nav .nav-link {
-    padding: 0.5rem 0;
+@media (max-width: 576px) {
+  .carousel-text h2 {
+    font-size: 1.2rem;
+  }
+  
+  .carousel-text h5 {
+    font-size: 1rem;
+  }
+  
+  .nav-tabs .nav-link {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.6rem;
   }
 }
